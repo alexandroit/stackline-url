@@ -1,0 +1,36 @@
+{
+  "upstream": "url",
+  "fork": "@stackline/url",
+  "repository": "alexandroit/stackline-url",
+  "upstreamRepository": "defunctzombie/node-url",
+  "upstreamVersion": "0.11.4",
+  "sourceCommit": "455a3e2106bf254498615efc50a8dd5527be4132",
+  "upstreamIntegrity": "sha512-oCwdVC7mTuWiPyjLUz/COz5TLk6wgp0RCsN+wHZ2Ekneac9w8uuV0njcbbie2ME+Vs+d6duwmYuR3HgQXs1fOg==",
+  "status": "source-ready",
+  "files": {
+    ".eslintignore": "5c5daf48fdf4db42e16c29b5b3de54984bafe0c2ff367a186ca97f1d4ed48290",
+    ".eslintrc": "a4b50e6cebcc4fc2109fbd65f649175f627b293cbc70fb87a6f1cd544698d007",
+    ".nycrc": "997785c50b0773e5e18bf15550fbf57823c634fefe623cd37b3c83696402ad0a",
+    "LICENSE": "00bfc53d658b2173d23e8c2a0f52332a5cfc6044525dafc5ecbe9a733bc3a49d",
+    "test/index.js": "b3cebc7566f590b9c4ffb9348fe9d139684e8ad6e2d149f8c83aebb822f7d64e",
+    "url.js": "1e658d2df35567cd130a5ca3aab514842c0c10118eb188b6ed1bdf7b746dd476",
+    "package.json": "c3b59c6638470d8a0db69e357b41b84fc242648d3a33ab500aa993c649d6d524",
+    "README.md": "9dd0f9f49be606f7326c28c7579b2d1271eb984ab1697602f70ad068e7198052",
+    "test/mocha.opts": "c31b6a2e8fa297b7ff75790a1d0f55642476f1e362e68b44562c3a5fc6d8da69"
+  },
+  "allowedRuntimeChanges": [
+    "url.js"
+  ],
+  "testCommand": "mocha test/index.js",
+  "strategy": "Published upstream files, including generated declarations, are preserved and checked against SHA-256. Functional tests run against source and the extracted final package. Changes to published runtime files require an explicit reviewed allowlist.",
+  "issueFixes": [
+    {
+      "url": "https://github.com/defunctzombie/node-url/issues/32",
+      "change": "Normalize protocol before hostless-protocol lookup; preserve payload case."
+    },
+    {
+      "url": "https://github.com/defunctzombie/node-url/issues/48",
+      "change": "Respect slashes:false when formatting a protocol-less hostname."
+    }
+  ]
+}

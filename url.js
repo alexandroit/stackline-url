@@ -164,8 +164,8 @@ Url.prototype.parse = function (url, parseQueryString, slashesDenoteHost) {
 
   var proto = protocolPattern.exec(rest);
   if (proto) {
-    proto = proto[0];
-    var lowerProto = proto.toLowerCase();
+    proto = proto[0].toLowerCase();
+    var lowerProto = proto;
     this.protocol = lowerProto;
     rest = rest.substr(proto.length);
   }
@@ -448,7 +448,7 @@ Url.prototype.format = function () {
    * only the slashedProtocols get the //.  Not mailto:, xmpp:, etc.
    * unless they had them to begin with.
    */
-  if (this.slashes || (!protocol || slashedProtocol[protocol]) && host !== false) {
+  if (this.slashes || slashedProtocol[protocol] && host !== false) {
     host = '//' + (host || '');
     if (pathname && pathname.charAt(0) !== '/') { pathname = '/' + pathname; }
   } else if (!host) {

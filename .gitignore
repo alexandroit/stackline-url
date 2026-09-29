@@ -10,3 +10,8 @@ yarn.lock
 
 coverage/
 .nyc_output/
+
+node_modules/
+artifact/
+.package-consumer/
+*.tgz
