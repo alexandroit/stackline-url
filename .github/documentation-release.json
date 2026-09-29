@@ -1,0 +1,26 @@
+{
+  "repository": "alexandroit/stackline-url",
+  "packages": [
+    {
+      "name": "@stackline/url",
+      "path": "README.md",
+      "version": "1.0.1",
+      "baselineVersion": "1.0.0",
+      "keywords": [
+        "stackline",
+        "npm-package",
+        "url",
+        "browser",
+        "nodejs",
+        "parsing",
+        "analyze",
+        "maintenance-fork"
+      ],
+      "homepage": "https://alexandro.net/docs/vanilla/url/",
+      "baselineTarball": "https://registry.npmjs.org/@stackline/url/-/url-1.0.0.tgz",
+      "baselineIntegrity": "sha512-FZ1JzmPDDHo/Sun0waewNgMS9oLpnOZsTTKb+2uXA6QkrUrnIXB3soUldVDddaTnCLhJ5qL+/ZE8h/rhgvxtvA==",
+      "expectedSha512": "652278fb0d94d6440f7ffbaaa4813d74cdab3c7f07e27a4a95802c3cee7c0f8956519204ad4deebf26651cd25466e1c925bcd231a7168b63a2d436c28e47fb78",
+      "tag": "docs-stackline-url-v1.0.1"
+    }
+  ]
+}
