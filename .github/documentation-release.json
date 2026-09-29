@@ -4,7 +4,7 @@
     {
       "name": "@stackline/url",
       "path": "README.md",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "baselineVersion": "1.0.0",
       "keywords": [
         "stackline",
@@ -19,8 +19,8 @@
       "homepage": "https://alexandro.net/docs/vanilla/url/",
       "baselineTarball": "https://registry.npmjs.org/@stackline/url/-/url-1.0.0.tgz",
       "baselineIntegrity": "sha512-FZ1JzmPDDHo/Sun0waewNgMS9oLpnOZsTTKb+2uXA6QkrUrnIXB3soUldVDddaTnCLhJ5qL+/ZE8h/rhgvxtvA==",
-      "expectedSha512": "652278fb0d94d6440f7ffbaaa4813d74cdab3c7f07e27a4a95802c3cee7c0f8956519204ad4deebf26651cd25466e1c925bcd231a7168b63a2d436c28e47fb78",
-      "tag": "docs-stackline-url-v1.0.1"
+      "expectedSha512": "f2d3a3191aba434970ceac9370e87e44c33b378a027572bab97ccc5c060764cc3d61c9c00cbbca054051ec9f22dbb98ca3e18a2db818776e29e33f2e3b64e362",
+      "tag": "docs-stackline-url-v1.0.2"
     }
   ]
 }
