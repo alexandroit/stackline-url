@@ -8,3 +8,5 @@
 - Preserve and verify published runtime files and TypeScript declarations.
 - Run upstream functional suites against both source and the final package.
 - Publish the reviewed CI artifact through GitHub Actions with provenance and immutable release evidence.
+
+- Encode every hash in query strings, preventing accidental fragment creation. Preserve the single username/password separator with an explicit, tested operation.

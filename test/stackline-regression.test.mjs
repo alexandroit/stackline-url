@@ -20,3 +20,15 @@ test('format only adds protocol-relative slashes when requested', () => {
   assert.equal(url.format({protocol: 'https:', hostname: 'example.com', pathname: 'a'}), 'https://example.com/a')
   assert.equal(url.format({protocol: 'mailto:', hostname: 'example.com', auth: 'user'}), 'mailto:user@example.com')
 })
+
+
+test('format escapes every hash in a query without creating a fragment', () => {
+  const formatted = url.format({protocol: 'https:', hostname: 'example.com', search: '?a=#b#c'});
+  assert.equal(formatted, 'https://example.com?a=%23b%23c');
+  assert.equal(url.parse(formatted).hash, null);
+});
+
+test('auth preserves the first credential separator and escapes later colons', () => {
+  assert.equal(url.format({protocol: 'https:', hostname: 'example.com', auth: 'user:pass:word'}), 'https://user:pass%3Aword@example.com');
+  assert.equal(url.parse(url.format({protocol: 'https:', hostname: 'example.com', auth: 'user:pass:word'})).auth, 'user:pass:word');
+});

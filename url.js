@@ -414,7 +414,12 @@ Url.prototype.format = function () {
   var auth = this.auth || '';
   if (auth) {
     auth = encodeURIComponent(auth);
-    auth = auth.replace(/%3A/i, ':');
+    // Only the first colon separates username and password. Further colons
+    // belong to the password and remain escaped. This is not a sanitizer.
+    var separator = auth.indexOf('%3A');
+    if (separator !== -1) {
+      auth = auth.slice(0, separator) + ':' + auth.slice(separator + 3);
+    }
     auth += '@';
   }
 
@@ -461,7 +466,7 @@ Url.prototype.format = function () {
   pathname = pathname.replace(/[?#]/g, function (match) {
     return encodeURIComponent(match);
   });
-  search = search.replace('#', '%23');
+  search = search.replace(/#/g, '%23');
 
   return protocol + host + pathname + search + hash;
 };
