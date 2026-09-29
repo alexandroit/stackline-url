@@ -17,12 +17,15 @@
     "build": "node scripts/check-payload.mjs",
     "test:package": "node scripts/test-package.mjs"
   },
-  "homepage": "https://github.com/alexandroit/stackline-url#readme",
+  "homepage": "https://alexandro.net/docs/vanilla/url/",
   "keywords": [
-    "parsing",
-    "url",
-    "analyze",
     "stackline",
+    "npm-package",
+    "url",
+    "browser",
+    "nodejs",
+    "parsing",
+    "analyze",
     "maintenance-fork"
   ],
   "repository": {
@@ -40,7 +43,7 @@
     "typescript": "7.0.2",
     "@types/node": "24.12.2"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
